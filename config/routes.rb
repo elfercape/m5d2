@@ -1,6 +1,18 @@
 Rails.application.routes.draw do
   root "welcome#index"
-  get "welcome/index"
+
+  get "documentary/create"
+  get "documentary/index"
+  get "documentary/new"
+  post "documentaryfilms" => "documentary#create"
+  post "documentary" => "documentary#create"
+
+  get "series/index"
+  get "series/create"
+  get "series/new"
+  post "series" => "series#create"
+
+  
   get "movies/index"
   get "movies/create"
   get "movies/new"
