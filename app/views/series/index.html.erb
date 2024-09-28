@@ -1,8 +1,8 @@
-<h1>Series#index</h1>
-<p>Find me in app/views/series/index.html.erb</p>
+<h1 class="text-primary">Series#index</h1>
+<p class="text-primary-emphasis">Listado de series</p>
 
 <% @serie_all.each do |serial| %>
     <h2><%= serial.name %></h2>
-    <p><%= serial.synopsis %></p>
-    <p><%= serial.director %></p>
+    <p class="text-primary-emphasis"><%= serial.synopsis %></p>
+    <p class="text-info"><%= serial.director %></p>
     <% end%>

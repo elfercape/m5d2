@@ -1,8 +1,8 @@
-<h1>Documentary#index</h1>
-<p>Find me in app/views/documentary/index.html.erb</p>
+<h1 class="text-danger-emphasis">Documentary#index</h1>
+<p class="text-danger">Listados de Documentales</p>
 
 <% @documentary_all.each do |documental| %>
     <h2><%= documental.name %></h2>
-    <p><%= documental.synopsis %></p>
-    <p><%= documental.director %></p>
+    <p class="text-success"><%= documental.synopsis %></p>
+    <p class="text-success"><%= documental.director %></p>
     <% end%>
